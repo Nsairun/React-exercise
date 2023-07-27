@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 const { createContext, useContext, useState } = require('react');
 
 const AppContext = createContext({});
