@@ -50,106 +50,142 @@ function Exers(onplay) {
 
   return (
     <div className="intro">
-      <div className="xbox">
-        <Button
-          type="button"
+      <div
+        className="xbox"
+        style={{
+          display: 'flex',
+          alignContent: 'center',
+          justifyContent: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        <div
+          className="firstRow"
           style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
+            display: 'flex',
+            alignContent: 'center',
+            justifyContent: 'center',
           }}
-          value={squares[0]}
-          onSquareClick={() => handleClick(0)}
-        />
-        <Button
-          type="button"
+        >
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+              border: '2px solid brown',
+            }}
+            value={squares[0]}
+            onSquareClick={() => handleClick(0)}
+          />
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[1]}
+            onSquareClick={() => handleClick(1)}
+          />
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[2]}
+            onSquareClick={() => handleClick(2)}
+          />
+        </div>
+        <div
+          className="secondRow"
           style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
+            display: 'flex',
+            alignContent: 'center',
+            justifyContent: 'center',
           }}
-          value={squares[1]}
-          onSquareClick={() => handleClick(1)}
-        />
-        <Button
-          type="button"
+        >
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[3]}
+            onSquareClick={() => handleClick(3)}
+          />
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[4]}
+            onSquareClick={() => handleClick(4)}
+          />
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[5]}
+            onSquareClick={() => handleClick(5)}
+          />
+        </div>
+        <div
+          className="thirdRow"
           style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
+            display: 'flex',
+            alignContent: 'center',
+            justifyContent: 'center',
           }}
-          value={squares[2]}
-          onSquareClick={() => handleClick(2)}
-        />
-        <Button
-          type="button"
-          style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
-          }}
-          value={squares[3]}
-          onSquareClick={() => handleClick(3)}
-        />
-        <Button
-          type="button"
-          style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
-          }}
-          value={squares[4]}
-          onSquareClick={() => handleClick(4)}
-        />
-        <Button
-          type="button"
-          style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
-          }}
-          value={squares[5]}
-          onSquareClick={() => handleClick(5)}
-        />
-        <Button
-          type="button"
-          style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
-          }}
-          value={squares[6]}
-          onSquareClick={() => handleClick(6)}
-        />
-        <Button
-          type="button"
-          style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
-          }}
-          value={squares[7]}
-          onSquareClick={() => handleClick(7)}
-        />
-        <Button
-          type="button"
-          style={{
-            background: 'grey',
-            padding: '15px',
-            borderRadius: '10px',
-            color: 'white',
-          }}
-          value={squares[8]}
-          onSquareClick={() => handleClick(8)}
-        />
+        >
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[6]}
+            onSquareClick={() => handleClick(6)}
+          />
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[7]}
+            onSquareClick={() => handleClick(7)}
+          />
+          <Button
+            type="button"
+            style={{
+              background: 'grey',
+              padding: '15px',
+              borderRadius: '10px',
+              color: 'white',
+            }}
+            value={squares[8]}
+            onSquareClick={() => handleClick(8)}
+          />
+        </div>
       </div>
       <h1>{status}</h1>
     </div>
